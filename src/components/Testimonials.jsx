@@ -2,8 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 const Testimonials = () => {
   return (
-    <div>Testimonials</div>
+    <Testimonialstyle>
+    <div className="container">
+      
+    </div>
+
+    </Testimonialstyle>
   )
 }
 
 export default Testimonials
+
+const Testimonialstyle = styled.div`
+
+
+
+`

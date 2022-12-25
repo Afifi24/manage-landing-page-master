@@ -7,6 +7,11 @@ const Navbar = () => {
   const [isshowing,setIsshowing] = useState(false)
   const CloseOpen = ()=>{
     setIsshowing(!isshowing)
+    if(!isshowing){
+      document.body.style.overflow= 'hidden';
+    }else{
+      document.body.style.overflow = 'unset'
+    }
   }
   return (
     <Navstyle>

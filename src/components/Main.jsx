@@ -97,6 +97,21 @@ const Mainstyle = styled.div`
     .container__list{
         p{
             padding: 0;
+            font-size: 1rem;
+        }
+        h2{
+            padding: 0.4rem 0.1rem 0.4rem 0rem;
+            background-color: #f4d8d1;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border-radius: 1rem;
+            span{
+                margin-right: 0.3rem;
+            }
+        }
+        .list{
+            margin-bottom:2.3rem;
+            
         }
     }
 }

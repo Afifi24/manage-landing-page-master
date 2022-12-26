@@ -29,6 +29,11 @@ useEffect(()=>{
             })}
             </motion.div>
       </motion.div>
+      <div className="container__dots">
+        {Array.from({length:4}).map((item,index)=>(
+          <div className="dot"></div>
+        ))}
+      </div>
         <div className="btn"> <button className="Get-started-btn">Get Started</button></div>
 
     </div>
@@ -59,6 +64,7 @@ margin-bottom: 5rem;
   display: flex;
   gap: 1rem;
   margin-top: 3rem;
+  padding-bottom:1rem;
  }
 .card{
   background-color: var(--Vary-Light-Gray);
@@ -66,6 +72,8 @@ margin-bottom: 5rem;
   text-align: center;
   padding: 2rem 1.27rem;
   position: relative;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+
   /* width: 700px; */
   h3{
     margin-bottom: 1rem;
@@ -100,6 +108,20 @@ margin-bottom: 5rem;
 .btn{
   text-align: center;
 }
+.container__dots{
+  display: none;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+ 
+}
+.dot{
+  height: 10px;
+  width: 10px;
+  border: 1px solid var(--bright-red);
+  border-radius: 50%;
+}
 /* medai query */
 @media screen and (max-width:900px) {
   .card{
@@ -109,6 +131,13 @@ margin-bottom: 5rem;
 @media screen and (max-width:500px) {
   .card{
     min-width:350px ;
+    
+  }
+  .container__dots{
+    display: flex;
+  }
+  .dot:nth-last-child(){
+    background-color:red;
   }
 }
 `

@@ -99,6 +99,13 @@ const Footerstyle = styled.div`
 
 .social-icon{
 display: flex;
+img{
+    transition: var(--transition);
+    &:hover{
+    filter: brightness(1) invert(9);
+    cursor: pointer;
+}
+}
 
 gap: 0.7rem;
 }
@@ -145,6 +152,7 @@ gap: 0.7rem;
 @media screen and (max-width:1000px) {
     .footer{
         grid-template-columns:3fr 2fr 1.5fr 1.5fr;
+        width: 90%;
     }
 }
 @media screen and (max-width:900px) {

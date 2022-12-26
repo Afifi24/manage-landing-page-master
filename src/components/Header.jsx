@@ -64,6 +64,7 @@ margin: auto;
 /* MEDAI QUERY */
 
 @media screen and (max-width:1024px) {
+  width: 90%;
     .container{
         grid-template-columns: 47% 47%;
         gap: 6%;

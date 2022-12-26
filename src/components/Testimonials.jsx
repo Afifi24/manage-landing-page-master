@@ -62,10 +62,11 @@ margin-bottom: 5rem;
  }
 .card{
   background-color: var(--Vary-Light-Gray);
-  min-width: 500px;
+ min-width: 450px;
   text-align: center;
   padding: 2rem 1.27rem;
   position: relative;
+  /* width: 700px; */
   h3{
     margin-bottom: 1rem;
     color:var(--Dark-Blue);
@@ -102,6 +103,12 @@ margin-bottom: 5rem;
 /* medai query */
 @media screen and (max-width:900px) {
   .card{
-    max-width: 400px;  }
+    min-width:400px ;
+  }
+}
+@media screen and (max-width:500px) {
+  .card{
+    min-width:350px ;
+  }
 }
 `

@@ -79,6 +79,7 @@ margin: auto;
 
 /* MEDIA QUERY */
 @media screen and (max-width:914px) {
+  width: 90%;
     .container{
         grid-template-columns: 1fr;
         gap: 5rem;

@@ -84,6 +84,7 @@ nav{
 /* MEDIA QUERY */
 
 @media screen and (max-width:1024px) {
+  width: 90%;
   .nav-icon{
     display: block;
     cursor: pointer;

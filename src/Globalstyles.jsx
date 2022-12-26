@@ -8,11 +8,11 @@ padding: 0;
 box-sizing: border-box;
 }
 body{
-    width: 80%;
+    /* width: 80%;
     margin: auto;
     @media screen and (max-width:500px) {
         width: 90%;
-    }
+    } */
 }
 :root{
     /* primary */

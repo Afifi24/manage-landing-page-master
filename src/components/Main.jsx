@@ -30,7 +30,8 @@ const Main = () => {
 export default Main
 
 const Mainstyle = styled.div`
-
+width: 80%;
+margin: auto;
 .container{
 
     margin-top: 5rem;

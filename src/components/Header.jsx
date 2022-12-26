@@ -18,6 +18,8 @@ const Header = () => {
 export default Header
 
 const Headerstyle = styled.div`
+width: 80%;
+margin: auto;
 .container{
     /* display: flex;
     gap: 1.4rem; */

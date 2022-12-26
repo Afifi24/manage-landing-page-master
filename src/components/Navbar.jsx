@@ -34,7 +34,8 @@ const Navbar = () => {
 export default Navbar
 
 const Navstyle = styled.div`
-
+width: 80%;
+ margin: auto;
 nav{
   display: flex;
   align-items: center;

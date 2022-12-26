@@ -11,6 +11,7 @@ const Header = () => {
         </div>
         <div className="container__image"><img src={image} alt="" /></div>
       </div>
+      <img className='bg' src="./bg-tablet-pattern.svg" alt="" />
     </Headerstyle>
   )
 }
@@ -20,9 +21,15 @@ export default Header
 const Headerstyle = styled.div`
 width: 80%;
 margin: auto;
+.bg{
+  position: absolute;
+  top: -5rem;
+  right: -6rem;
+  z-index: -1;
+  width: 40rem;
+  
+}
 .container{
-    /* display: flex;
-    gap: 1.4rem; */
     display: grid;
     grid-template-columns: 45% 45%;
    gap: 10%;
@@ -93,7 +100,13 @@ margin: auto;
 
 }
 @media screen and (max-width:780px) {
+  .bg{
 
+  top: -5rem;
+  right: -6rem;
+  width: 37rem;
+  
+}
 .container{
     grid-template-columns: 49% 49%;
     gap: 2%;
@@ -128,6 +141,11 @@ margin: auto;
   }
 
 }
+@media screen and (max-width:500px) {
+.bg{
+  width: 35rem;
+}
+}
 
 @media screen and (max-width:500px) {
     .container{
@@ -138,5 +156,16 @@ margin: auto;
 }
 
 }
-
+@media screen and (max-width:474px) {
+.bg{
+  width: 30rem;
+}
+}
+@media screen and (max-width:390px) {
+.bg{
+  width: 28rem;
+  top: -3rem;
+  right: -8rem;
+}
+}
 `

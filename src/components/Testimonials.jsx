@@ -130,7 +130,7 @@ margin-bottom: 5rem;
 }
 @media screen and (max-width:500px) {
   .card{
-    min-width:350px ;
+    min-width:330px ;
     
   }
   .container__dots{

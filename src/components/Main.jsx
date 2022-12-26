@@ -23,6 +23,7 @@ const Main = () => {
 
         </div>
       </div>
+      <img className='bgg' src="./bg-tablet-pattern.svg" alt="" />
     </Mainstyle>
   )
 }
@@ -32,6 +33,14 @@ export default Main
 const Mainstyle = styled.div`
 width: 80%;
 margin: auto;
+.bgg{
+    position: absolute;
+    top:190%;
+    left:-30% ;
+    z-index: -1;
+    width: 40rem;
+    
+}
 .container{
 
     margin-top: 5rem;
@@ -86,6 +95,7 @@ margin: auto;
     }
 }
 @media screen and (max-width:500px) {
+    
     .container{
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -116,5 +126,23 @@ margin: auto;
             
         }
     }
+}
+
+
+@media screen and (max-width:1000px) {
+    .bgg{
+    display: none;
+    
+}
+}
+@media screen and (max-width:500px) {
+    .bgg{
+    display: flex;
+    top:150%;
+    right:0%;
+    
+    width: 20rem;
+    
+}
 }
 `

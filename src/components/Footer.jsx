@@ -83,9 +83,7 @@ const Footerstyle = styled.div`
     display: flex;
     justify-content: space-around;
 }
-.copy{
-    display: none;
-}
+
 .left{
     display: flex;
     flex-direction: column;
@@ -94,6 +92,9 @@ const Footerstyle = styled.div`
     .logo{
         filter: brightness(0) invert(1);
       
+}
+.copy{
+    display: none;
 }
 }
 
@@ -166,6 +167,13 @@ gap: 0.7rem;
         grid-area:3;
         flex-direction:column-reverse;
         align-items: center;
+        .copy{
+    display: block;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 10px;
+    text-align: center;
+    /* padding-left :2.5rem; */
+}
     }
     .right{
         gap: 2rem;

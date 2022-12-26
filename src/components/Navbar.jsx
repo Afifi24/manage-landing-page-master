@@ -9,8 +9,11 @@ const Navbar = () => {
     setIsshowing(!isshowing)
     if(!isshowing){
       document.body.style.overflow= 'hidden';
+      document.body.style.overflowX='hidden'
     }else{
       document.body.style.overflow = 'unset'
+      document.body.style.overflowX='hidden'
+
     }
   }
   return (

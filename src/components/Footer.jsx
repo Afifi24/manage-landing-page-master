@@ -10,6 +10,8 @@ const Footer = () => {
     <Footerstyle>
     <div className="footer">
         <div className="left">
+       <div className="copy">Copyright 2022. All Rights Reserved</div>
+
             <div className="logo"><img src="" alt="" /> <img src={Logo} alt="" /></div>
             <div className="social-icon">
                <img src={Facebook} alt="" />
@@ -19,6 +21,7 @@ const Footer = () => {
                <img src={instagram} alt="" />
             </div>
         </div>
+       <div className="nav">
        <ul className="nav1">
         <li>Home</li>
         <li>Pricing</li>
@@ -30,6 +33,7 @@ const Footer = () => {
         <li>Community</li>
         <li>Privacy Policy</li>
        </ul>
+       </div>
        <div className="right">
         <form action="">
             <input type="text" placeholder="Updates in your inbox..." />
@@ -37,6 +41,7 @@ const Footer = () => {
         </form>
         <div className="copyright">Copyright 2022. All Rights Reserved</div>
        </div>
+
     </div>
     </Footerstyle>
   )
@@ -51,7 +56,7 @@ const Footerstyle = styled.div`
 .footer{
     color: #fff;
     display: grid;
-    grid-template-columns:2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
     padding: 4rem 0rem;
     gap: 2rem;
    width: 80%;
@@ -73,6 +78,13 @@ const Footerstyle = styled.div`
             
         }
     }
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.copy{
+    display: none;
 }
 .left{
     display: flex;
@@ -139,15 +151,44 @@ gap: 0.7rem;
     .footer{
         grid-template-columns:1fr;
         place-items: center;
+        gap: 3rem;
     }
     .left{
         gap: 2rem;
+        grid-area:3;
+        flex-direction:column-reverse;
+        align-items: center;
     }
     .right{
         gap: 2rem;
+        grid-area: 1;
+        input{
+            width: 14rem;
+        }
+        button{
+            width: 3.5rem;
+        }
+    }
+    .nav{
+        grid-area: 2;
+        gap: 2rem;
     }
     .copyright{
-        
+        display: none;
     }
 }
+.copy{
+    display: block;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 10px;
+    text-align: center;
+    /* padding-left :2.5rem; */
+}
+.social-icon{
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
 `

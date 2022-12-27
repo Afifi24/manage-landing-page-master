@@ -80,6 +80,8 @@ nav{
   cursor: pointer;
   font-weight: 700;
   /* box-shadow: 0px 10px 20px rgb(211, 121, 121,0.7); */
+  box-shadow: -6px 10px 10px rgb(211, 121, 121,0.7);
+
 
   &:hover{
     background-color: var(--light-bright-red);

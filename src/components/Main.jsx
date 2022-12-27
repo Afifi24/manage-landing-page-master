@@ -23,7 +23,7 @@ const Main = () => {
 
         </div>
       </div>
-      <img className='bgg' src="./bg-tablet-pattern.svg" alt="" />
+      {/* <img className='bgg' src="./bg-tablet-pattern.svg" alt="" /> */}
     </Mainstyle>
   )
 }

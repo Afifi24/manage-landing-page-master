@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <div className="container__image"><img src={image} alt="" /></div>
       </div>
-      <img className='bg' src="./bg-tablet-pattern.svg" alt="" />
+      {/* <img className='bg' src="./bg-tablet-pattern.svg" alt="" /> */}
     </Headerstyle>
   )
 }

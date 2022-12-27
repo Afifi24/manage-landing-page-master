@@ -27,7 +27,7 @@ ul{
 }
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    /* overflow-x: hidden; */
+    
    
 }
 `

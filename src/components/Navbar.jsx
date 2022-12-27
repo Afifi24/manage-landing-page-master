@@ -38,8 +38,6 @@ const Navbar = () => {
 export default Navbar
 
 const Navstyle = styled.div`
-/* width: 80%;
- margin: auto; */
  overflow: hidden;
 
  
@@ -81,7 +79,7 @@ nav{
   background-color: var(--bright-red);
   cursor: pointer;
   font-weight: 700;
-  box-shadow: 0px 10px 20px rgb(211, 121, 121,0.7);
+  /* box-shadow: 0px 10px 20px rgb(211, 121, 121,0.7); */
 
   &:hover{
     background-color: var(--light-bright-red);
@@ -96,6 +94,8 @@ nav{
     display: block;
     cursor: pointer;
     z-index: 100;
+    position: absolute;
+    right: 1rem;
   }
   .nav-menu{
     position: absolute;

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 const Main = () => {
   return (
     <Mainstyle>
+      <div className="main">
       <div className="container">
         <div className="container__about">
             <h1>What's different about Manage?</h1>
@@ -23,7 +24,8 @@ const Main = () => {
 
         </div>
       </div>
-      {/* <img className='bgg' src="./bg-tablet-pattern.svg" alt="" /> */}
+      </div>
+      <img className='bgg' src="./bg-tablet-pattern.svg" alt="" />
     </Mainstyle>
   )
 }
@@ -31,11 +33,15 @@ const Main = () => {
 export default Main
 
 const Mainstyle = styled.div`
-width: 80%;
-margin: auto;
+    position: relative;
+    /* overflow: hidden; */
+.main{
+    width: 80%;
+   margin: auto;
+}
 .bgg{
     position: absolute;
-    top:190%;
+    top:55%;
     left:-30% ;
     z-index: -1;
     width: 40rem;
@@ -87,7 +93,9 @@ margin: auto;
 
 /* MEDIA QUERY */
 @media screen and (max-width:914px) {
-  width: 90%;
+  .main{
+    width: 90%;
+  }
     .container{
         grid-template-columns: 1fr;
         gap: 5rem;
@@ -137,10 +145,10 @@ margin: auto;
 @media screen and (max-width:500px) {
     .bgg{
     display: flex;
-    top:150%;
-    right:0%;
+    top:-34%;
+    left:63%;
     
-    width: 20rem;
+    width: 17rem;
     
 }
 }

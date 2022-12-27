@@ -179,7 +179,7 @@ gap: 0.7rem;
         gap: 2rem;
         grid-area: 1;
         input{
-            width: 14rem;
+            width: 12rem;
         }
         button{
             width: 3.5rem;
@@ -187,7 +187,7 @@ gap: 0.7rem;
     }
     .nav{
         grid-area: 2;
-        gap: 2rem;
+        gap: 4rem;
     }
     .copyright{
         display: none;

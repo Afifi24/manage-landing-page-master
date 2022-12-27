@@ -66,8 +66,9 @@ margin: auto;
   background-color: var(--bright-red);
   cursor: pointer;
   font-weight: 700;
+  margin-bottom: 1rem;
   /* box-shadow: 0px 5px 10px var(--bright-red); */
-  box-shadow: 0px 10px 20px rgb(211, 121, 121,0.7);
+  box-shadow: 0px 7px 10px rgb(211, 121, 121,0.7);
   &:hover{
     background-color: var(--light-bright-red);
   }

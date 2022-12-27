@@ -30,6 +30,7 @@ const Navbar = () => {
       </ul>
       <button className="Get-started-btn"> Get Started</button>
       </nav>
+
     </Navstyle>
   )
 }
@@ -37,8 +38,11 @@ const Navbar = () => {
 export default Navbar
 
 const Navstyle = styled.div`
-width: 80%;
- margin: auto;
+/* width: 80%;
+ margin: auto; */
+ overflow: hidden;
+
+ 
 nav{
   display: flex;
   align-items: center;

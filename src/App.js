@@ -11,13 +11,14 @@ function App() {
   return (
     <div className="App">
     <Container>
-    <Navbar/>
+    {/* <Navbar/> */}
       <Globalstyle/>
       <Header/>
       <Main/>
       <Testimonials/>
       <Card/>
       <Footer/>
+
     </Container>
 
     </div>
@@ -27,6 +28,15 @@ function App() {
 export default App;
 
 const Container = styled.div`
-
+/* .bg{
+  position: absolute;
+  top: -5rem;
+  right: -6rem;
+  z-index: -1;
+  width: 40rem;
+  
+ 
+  
+} */
 
 `

@@ -53,11 +53,10 @@ margin: auto;
     h1{
         margin-bottom: 2rem;
         color: var(--Dark-Blue);
-        /* font-size: 1.9rem; */
+        
     }
     p{
         line-height: 1.5;
-        /* color: var(--Dark-Grayish-Blue); */
         color: hsl(227, 12%, 61%);
         max-width: 330px;
     }

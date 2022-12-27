@@ -1,8 +1,12 @@
 import styled from 'styled-components'
 import image from '../images/illustration-intro.svg'
+import Navbar from './Navbar'
 const Header = () => {
   return (
     <Headerstyle>
+     
+     <div className="time">
+      <Navbar/>
       <div className="container">
         <div className="container__text">
             <h1>Bring evryone together to build better products.</h1>
@@ -11,7 +15,8 @@ const Header = () => {
         </div>
         <div className="container__image"><img src={image} alt="" /></div>
       </div>
-      {/* <img className='bg' src="./bg-tablet-pattern.svg" alt="" /> */}
+      </div>
+      <img className='bg' src="./bg-tablet-pattern.svg" alt="" />
     </Headerstyle>
   )
 }
@@ -19,11 +24,16 @@ const Header = () => {
 export default Header
 
 const Headerstyle = styled.div`
-width: 80%;
+
+position: relative;
+overflow: hidden;
+.time{
+  width: 80%;
 margin: auto;
+}
 .bg{
   position: absolute;
-  top: -5rem;
+  top: -6rem;
   right: -6rem;
   z-index: -1;
   width: 40rem;
@@ -33,6 +43,7 @@ margin: auto;
     display: grid;
     grid-template-columns: 45% 45%;
    gap: 10%;
+  
 }
 .container__text{
     padding-top: 1.5rem;
@@ -71,7 +82,9 @@ margin: auto;
 /* MEDAI QUERY */
 
 @media screen and (max-width:1024px) {
+ .time{
   width: 90%;
+ }
     .container{
         grid-template-columns: 47% 47%;
         gap: 6%;

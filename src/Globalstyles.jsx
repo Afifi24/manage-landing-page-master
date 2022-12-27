@@ -7,13 +7,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-body{
-    /* width: 80%;
-    margin: auto;
-    @media screen and (max-width:500px) {
-        width: 90%;
-    } */
-}
+
 :root{
     /* primary */
     --bright-red :hsl(12, 88%, 59%);
@@ -33,7 +27,8 @@ ul{
 }
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+   
 }
 `
 

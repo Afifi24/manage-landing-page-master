@@ -17,6 +17,8 @@ const Header = () => {
       </div>
       </div>
       <img className='bg' src="./bg-tablet-pattern.svg" alt="" />
+      <img className='bgg' src="./bg-tablet-pattern.svg" alt="" />
+
     </Headerstyle>
   )
 }
@@ -38,6 +40,14 @@ margin: auto;
   z-index: -1;
   width: 40rem;
   
+}
+    .bgg{
+    display: none;
+    top:-34%;
+    left:63%;
+    position: absolute;
+    width: 17rem;
+    
 }
 .container{
     display: grid;
@@ -159,6 +169,14 @@ margin: auto;
 .bg{
   width: 35rem;
 }
+.bgg{
+  display: flex;
+  top:-34%;
+  left:63%;
+  
+  width: 17rem;
+  
+}
 }
 
 @media screen and (max-width:500px) {
@@ -183,3 +201,4 @@ margin: auto;
 }
 }
 `
+

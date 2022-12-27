@@ -169,24 +169,27 @@ margin: auto;
 .bg{
   width: 35rem;
 }
-.bgg{
-  display: flex;
-  top:-34%;
-  left:63%;
-  
-  width: 17rem;
-  
-}
+
 }
 
 @media screen and (max-width:500px) {
+  padding-bottom:5rem;
     .container{
         gap: 1rem;
     }
 .container__text{
     text-align: center;
 }
-
+.bgg{
+    display: flex;
+    /* top:-34%;
+    left:63%; */
+    top: 70%;
+    left: 60%;
+    width: 17rem;
+    z-index: -1;
+    
+}
 }
 @media screen and (max-width:474px) {
 .bg{

@@ -143,13 +143,13 @@ const Mainstyle = styled.div`
 }
 }
 @media screen and (max-width:500px) {
-    .bgg{
+    /* .bgg{
     display: flex;
     top:-34%;
     left:63%;
     
     width: 17rem;
     
-}
+} */
 }
 `
